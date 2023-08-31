@@ -1,0 +1,439 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6849292" data-tilda-page-id="35263717" data-tilda-page-alias="confidential" data-tilda-formskey="3befead0255596de5e1bac0fb6849292" data-tilda-lazy="yes"><div id="rec569799059" class="r t-rec" style=" " data-animationappear="off" data-record-type="257" ><!-- T228 --><div id="nav569799059marker"></div><div class="tmenu-mobile tmenu-mobile_positionfixed" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__burgerlogo"><a href="" style="color:#ffffff;"><img src="images/tild6262-3562-4139-b130-373465323434__vector_41_1.svg" class="tmenu-mobile__imglogo" imgfield="img" style="max-width: 80px; width: 80px;" alt=""></a></div><div class="t-menuburger t-menuburger_second t-menuburger__small"><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span></div><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('569799059');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec569799059 .tmenu-mobile {
+background-color: #ffffff;
+}
+#rec569799059 .tmenu-mobile__menucontent_fixed {
+position: fixed;
+top: 64px;
+}
+#rec569799059 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><div id="nav569799059" class="t228 t228__positionfixed tmenu-mobile__menucontent_hidden tmenu-mobile__menucontent_fixed" style="background-color: rgba(255,255,255,0.60); " data-bgcolor-hex="#ffffff" data-bgcolor-rgba="rgba(255,255,255,0.60)" data-navmarker="nav569799059marker" data-appearoffset="" data-bgopacity-two="80" data-menushadow="" data-bgopacity="0.60" data-bgcolor-rgba-afterscroll="rgba(255,255,255,0.80)" data-menu-items-align="center" data-menu="yes"><div class="t228__maincontainer " style=""><div class="t228__padding40px"></div><div class="t228__leftside"><div class="t228__leftcontainer"><a href="" class="t228__imgwrapper" style="color:#ffffff;"><img class="t228__imglogo t228__imglogomobile" 
+src="images/tild6262-3562-4139-b130-373465323434__vector_41_1.svg" 
+imgfield="img"
+style="max-width: 80px; width: 80px; min-width: 80px; height: auto; display: block;"
+alt=""></a></div></div><div class="t228__centerside "></div><div class="t228__rightside"><div class="t228__rightcontainer"><div class="t228__right_buttons"><div class="t228__right_buttons_wrap"><div class="t228__right_buttons_but"><a href="" target="" class="t-btn t-btn_md " style="color:#000000;border:1px solid #e3e3e3;border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;font-family:VTBGroupUI;font-weight:500;"><table role="presentation" style="width:100%; height:100%;"><tr><td>Вернуться на главную</td></tr></table></a></div></div></div></div></div><div class="t228__padding40px"></div></div></div><style>@media screen and (max-width: 980px) {
+#rec569799059 .t228__leftcontainer{
+display: none;
+}
+}</style><style>@media screen and (max-width: 980px) {
+#rec569799059 .t228__leftcontainer {
+padding: 20px;
+}
+#rec569799059 .t228__imglogo {
+padding: 20px 0;
+}
+#rec569799059 .t228 {
+}
+}</style><script>window.addEventListener('load', function () {
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('569799059');
+});
+});
+window.addEventListener('resize', t_throttle(function () {
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('569799059');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('569799059', '.t228');
+});
+}));
+t_onReady(function () {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t228__list_item a');
+});
+t_onFuncLoad('t_menu__findAnchorLinks', function () {
+t_menu__findAnchorLinks('569799059', '.t228__list_item a');
+});
+t_onFuncLoad('t228__init', function () {
+t228__init('569799059');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('569799059', '.t228');
+});
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('569799059');
+});
+t_onFuncLoad('t_menu__changeBgOpacity', function () {
+t_menu__changeBgOpacity('569799059', '.t228');
+window.addEventListener('scroll', t_throttle(function () {
+t_menu__changeBgOpacity('569799059', '.t228');
+}));
+});
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('569799059', '.t228');
+});
+});</script><!--[if IE 8]><style>#rec569799059 .t228 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9ffffff', endColorstr='#D9ffffff');
+}</style><![endif]--><style>@media (hover), (min-width:0\0) {
+#rec569799059 .t-btn:not(.t-animate_no-hover):hover{
+background-color: #0062ff !important; color: #ffffff !important; border-color: #0062ff !important; }
+#rec569799059 .t-btn:not(.t-animate_no-hover){
+-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#rec569799059 .t-btntext:not(.t-animate_no-hover):hover{
+color: #ffffff !important; }
+}</style><style>#rec569799059 .t-menu__link-item{
+outline: none;
+}
+#rec569799059 .t-menu__link-item:focus-visible{
+outline: 5px auto rgba(0, 150, 255, 1);
+-webkit-outline: 5px auto rgba(0, 150, 255, 1);
+-moz-outline: 5px auto rgba(0, 150, 255, 1);
+-ms-outline: 5px auto rgba(0, 150, 255, 1);
+-o-outline: 5px auto rgba(0, 150, 255, 1);
+}
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec569799059 .t-menu__link-item,
+#rec569799059 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style></div><div id="rec569799008" class="r t-rec t-rec_pt_165 t-rec_pb_0" style="padding-top:165px;padding-bottom:0px; " data-record-type="255" ><!-- T225 --><div class="t225"><div class="t-container t-align_left"><div class="t-col t-col_8 t-prefix_2"><div class="t225__title t-title t-title_md" field="title" style=""><div style="font-size: 30px;" data-customstyle="yes"><span style="color: rgb(102, 102, 102);">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ СЕРВИСА «DION»</span></div></div> </div></div></div></div><div id="rec569752913" class="r t-rec t-rec_pt_15 t-rec_pb_0" style="padding-top:15px;padding-bottom:0px; " data-record-type="127" ><!-- T119 --><div class="t119"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div class="t119__preface t-descr" style="opacity:0.70;" field="text"><div style="font-size:16px;" data-customstyle="yes"><span style="color: rgb(102, 102, 102);">далее – Политика</span></div></div></div></div></div></div><div id="rec569752914" class="r t-rec t-rec_pt_45 t-rec_pb_60" style="padding-top:45px;padding-bottom:60px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong style="color: rgb(0, 0, 0);">1. Общие положения</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">Общество с ограниченной ответственностью «Группа компаний «Иннотех» (далее - Компания), которое является правообладателем сервиса DION, уважает ваши права на частную жизнь и стремится обеспечить для вас положительный опыт при использовании сервиса DION. </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">2. Кто мы и как с нами связаться?</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">Политика конфиденциальности информирует вас о порядке обработки персональных данных Компанией, осуществляющим администрирование сервиса DION, в частности, при: </span><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">использовании сервиса DION (веб-версии, десктоп-версии, и мобильной версии), </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">посещении нашего сайта dion.vc, diongo.ru; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">взаимодействии с нами посредством электронной почты и иным образом (например, при обращении в техподдержку) в контексте использования сервиса DION. Перед началом использования сервиса DION, пожалуйста, ознакомьтесь с настоящей Политикой. Если у вас есть вопросы касательно обработки ваших персональных данных или вы хотите реализовать свои права, пожалуйста, свяжитесь с нами по адресу электронной почты dpo@inno.tech </span></li></ul><br /><br /><strong style="color: rgb(0, 0, 0);">3. Термины, используемые в Политике</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">В Политике вы можете встретить специфические термины, определения которых даны ниже: </span><br /><br /><span style="color: rgb(0, 0, 0);">3.1. «Авторизация» – введение зарегистрированным Пользователем данных о себе для его опознавания, разрешения или отказа в осуществлении запрашиваемых операций, а также предоставление Пользователю возможностей Сервиса. </span><br /><br /><span style="color: rgb(0, 0, 0);">3.2. «Компания», «мы» и производные – Общество с ограниченной ответственностью «Группа компаний «Иннотех» (ОГРН 1227700086460, ИНН 9703073496, адрес: 123112, г. Москва, Пресненская наб., д.12, этаж 57, офис 9). </span><br /><br /><span style="color: rgb(0, 0, 0);">3.3. «Пользователь» – дееспособное физическое лицо, использующее Сервис. </span><br /><br /><span style="color: rgb(0, 0, 0);">3.4. «Регистрация» – совершение Пользователем действий, направленных на создание Учетной записи Пользователя в Сервисе. </span><br /><br /><span style="color: rgb(0, 0, 0);">3.5. «Сервис «DION»», «Сервис» – программа для электронных вычислительных машин (программа для ЭВМ) для организации проведения и участия в видео-конференц-связи посредством информационно-телекоммуникационной сети «Интернет». Сервис был разработан для предоставления Пользователям возможности проводить конференции, вебинары и обмениваться сообщениями при их проведении. Подробнее о функциях Сервиса смотрите раздел 3 Пользовательского соглашения (https://dion.vc/agreement). </span><br /><br /><span style="color: rgb(0, 0, 0);">3.6. «Учетная запись» – часть Сервиса, доступная только зарегистрированному Пользователю, которая предназначена для просмотра, редактирования, хранения и управления данными Пользователя, а также использования Сервиса. </span><br /><br /><span style="color: rgb(0, 0, 0);">3.7. «Файлы cookie» – небольшие файлы, которые создаются и сохраняются браузером при посещении сайта dion.vc, и позволяют нам отслеживать качество его работы анализировать его посещение сотрудниками.</span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">4. Какие данные, для каких целей и на каких основаниях мы обрабатываем?</strong><br /><br /><span style="color: rgb(0, 0, 0);">4.1. </span><em style="color: rgb(0, 0, 0);">Цель обработки:</em><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);">Регистрация учетной записи.</span><br /><br /><em style="color: rgb(0, 0, 0);">Состав персональных данных:</em><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);">Фамилия, имя, отчество, аватар (фотография), пол, адрес корпоративной электронной почты, сведения о месте работы, информация об устройствах.</span><br /><br /><em style="color: rgb(0, 0, 0);">Основание обработки:</em><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);">Обработка персональных данных необходима для исполнения Пользовательского соглашения, стороной которого вы являетесь.</span><br /><br /><span style="color: rgb(0, 0, 0);">4.2. </span><em style="color: rgb(0, 0, 0);">Цель обработки: </em><br /><span style="color: rgb(0, 0, 0);">Предоставление Сервиса, включая организацию проведения и участия в видео-конференц-связи, демонстрацию экрана, направления сообщений, записи конференции, использования корпоративных справочников (подробнее о функционале Сервиса см. Пользовательского соглашения).</span><br /><br /><em style="color: rgb(0, 0, 0);">Состав персональных данных:</em><span style="color: rgb(0, 0, 0);"> </span><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">информация о Пользователе, его профиле и иная, предоставляемая Пользователем при регистрации (фамилия, имя, отчество; аватар (фотография); адрес электронной почты, а также другие данные, которые вводит Пользователь, в том числе никнейм, сведения о занимаемой должности, компании работодателе); </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">контактный номер телефона и адрес электронной почты; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">учетная запись; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">интеграция контактов и календаря; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">содержание конференций, видеозаписи, а также сообщений чата в ходе использования Сервиса; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">иная информация, оставленная Пользователем в ходе коммуникации с Компанией при использовании Сервиса</span></li></ul><br /><em style="color: rgb(0, 0, 0);">Основание обработки:</em><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);">Обработка персональных данных необходима для исполнения Пользовательского соглашения, стороной которого вы являетесь</span><br /><br /><span style="color: rgb(0, 0, 0);">4.3. </span><em style="color: rgb(0, 0, 0);">Цель обработки:</em><br /><span style="color: rgb(0, 0, 0);">Оказание технической поддержки и обработка отзывов об использовании Сервиса</span><br /><br /><em style="color: rgb(0, 0, 0);">Состав персональных данных:</em><br /><span style="color: rgb(0, 0, 0);">Фамилия, имя, отчество, аватар (фотография), пол, адрес корпоративной электронной почты, сведения о месте работы, информация об устройствах, содержание оставленного отзыва/обращения и иная информация, оставленная Пользователем в ходе коммуникации с Компанией</span><br /><br /><em style="color: rgb(0, 0, 0);">Основание обработки:</em><br /><span style="color: rgb(0, 0, 0);">обработка персональных данных необходима для осуществления прав и законных интересов Компании, выражающихся в улучшении качества Сервиса</span><br /><br /><span style="color: rgb(0, 0, 0);">4.4. </span><em style="color: rgb(0, 0, 0);">Цель обработки:</em><br /><span style="color: rgb(0, 0, 0);">Определение предпочтений Пользователя, персонализация опыта Пользователя на сайте, аналитика использования сайта посредством использования файлов cookie</span><br /><br /><em style="color: rgb(0, 0, 0);">Состав персональных данных:</em><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">информация об устройстве Пользователя, его свойствах и производительности (уникальный идентификатор устройства, IP адрес; МАС-адрес, сведения о сети при использовании Сервиса, микрофоне, камере, иная информация о функциональных характеристиках устройства, необходимая для использования; местоположение); </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">время, проведенное при использовании Сервиса; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">тип и версия операционной системы, которую используют Пользователь; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">сведения о просмотренных страницах и используемом функционале Сервиса, а также о времени, проведенном в Сервисе и иных действиях Пользователя; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">сведения о ссылках, на которые переходил Пользователь, а также информацию о том, как Пользователь начал использовать Сервис (включая данные о рекламных ссылках Компании, которые размещали партнеры Компании и на которые перешел Пользователь, чтобы начать использовать Сервис или скачать его); </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">сведения о сторонних приложениях, которые использует Пользователь при взаимодействии с этим Сервисом. Объем собираемых Файлов cookie и технической информации зависит от настроек Пользователя – вы можете разрешить или запретить их использование в настройках своего браузера (см. пользовательское руководство браузеров Google Chrome Microsoft Edge Mozilla Firefox Safari).</span></li></ul><br /><em style="color: rgb(0, 0, 0);">Основание обработки:</em><br /><span style="color: rgb(0, 0, 0);">Обработка персональных данных осуществляется с вашего согласия. Вы можете отозвать свое согласие в любое время, изменив настройки вашего веб браузера (Google Chrome Microsoft Edge Mozilla Firefox Safari).</span><br /><br /><br /><span style="color: rgb(0, 0, 0);">Компания получает вышеуказанные Персональные данные непосредственно от Пользователя, который вводит их в момент Регистрации и Авторизации, а также при использовании Сервиса Пользователем. Компания может получать от компаний-клиентов сведения об их работниках для использования последними Сервиса. Компания будет обрабатывать Персональные данные в течение срока использования Сервиса, а также в течение 3 (трех) лет с момента прекращения использования Сервиса. При использовании файлов cookie Компания осуществляет пассивный сбор информации (то есть без передачи Пользователем этой информации активным способом). </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">5. Какими способами Компания обрабатывает Персональные данные Пользователя?</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">Обработка Персональных данных может включать в себя следующие действия, совершаемые с Персональными данными Пользователя при помощи средств вычислительной техники (автоматизированная обработка), а также, при необходимости, без использования таких средств (неавтоматизированная обработка): сбор; запись; систематизация; накопление; хранение; уточнение (обновление, изменение); извлечение; использование; передача (предоставление, доступ) лицам, указанным в разделе 6 Политики; блокирование; обезличивание; удаление; уничтожение. </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">6. Кому Компания может передавать персональные данные Пользователя:</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">6.1. Компания может передавать Персональные данные Пользователя следующим лицам: </span><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">компаниям-клиентам, которые организуют возможность использования этого Сервиса для своих работников. Компаниям-клиентам передаются только сведения об Учетной записи, которая создана Пользователем, которые являются работниками компаний-клиентов, такая передача производится на основании списков работников, которые соответствующие компании-клиенты направили Компании с целью предоставления возможности использования Сервиса их работниками; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">дата-центру: Обществу с ограниченной ответственностью «Т1Клауд» (ИНН 7720479358, ОГРН 1197746515405, адрес: 111395, г. Москва, улица Юности., д.13А, каб. 8), с целью хранения данных при функционировании Сервиса; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">сторонним поставщикам услуг, в случае если Компания будет их привлекать в рамках хостинга Сервиса, анализа данных, предоставлять ИТ-услуги и осуществлять техническое обслуживание Пользователей. </span></li></ul><br /><span style="color: rgb(0, 0, 0);">6.2. Компания может передавать Файлы cookie: </span><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">вышеуказанным компаниям-клиентам в минимальном объеме, необходимом для организации использования Сервиса Пользователями, которые являются их работниками; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">сторонним поставщикам услуг в случае, если Компания будет их привлекать в рамках хостинга Сервиса, анализа данных, предоставлять ИТ-услуги и осуществлять техническое обслуживание Пользователей; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Обществу с ограниченной ответственностью «Т1Клауд» (ООО «Т1Клауд»; ИНН 7720479358; Российская Федерация, 111395, г. Москва, ул. Юности, д. 13А, каб. 8) с целью хранения данных при функционировании Сервиса; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">в зависимости от настроек Пользователя системам веб-аналитики для улучшения Сервиса, разработки новых продуктов и услуг Компании, включая Google Analytics (для отказа использования данных в Google Analytics перейдите по (https://tools.google.com/dlpage/gaoptout?hl=ru-RU). </span></li></ul><br /><span style="color: rgb(0, 0, 0);">6.3. При использовании Сервиса информация о Пользователе, видеоряде и сообщениях пользователя в чате, доступна также другим Пользователем, которые участвуют в конференции или вебинаре. </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">7. Принципы обработки и защиты информации о Пользователях:</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">7.1. Компания в своей деятельности обеспечивает соблюдение законодательных принципов, указанных в ст. 5 Федерального закона от 27.07.2006 N 152-ФЗ «О персональных данных». </span><br /><br /><span style="color: rgb(0, 0, 0);">7.2. Компания предпринимает необходимые правовые, организационные и технические меры для обеспечения безопасности и конфиденциальности персональных данных в соответствии с требованиями законодательства РФ: </span><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">разрабатывает и внедряет организационно-распорядительные документы и иные документы в области обработки и защиты персональных данных; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">проводит инструктажи и обучение работников по вопросам обработки персональных данных и мер по их защите; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">обеспечивает физическую безопасность помещений и мест хранений персональных данных; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">определяет угрозы безопасности персональных данных при их обработке в информационных системах; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">устанавливает правила доступа к персональным данным; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">осуществляет контроль за принимаемыми мерами по обеспечению безопасности персональных данных и уровнем защищенности информационных систем; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">применяет иные правовые, организационные и технические меры по обеспечению безопасности персональных данных. </span></li></ul><br /><br /><strong style="color: rgb(0, 0, 0);">8. Права Пользователя:</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">8.1. Получать в доступной форме информацию, касающуюся обработки и прекращения обработки Персональных данных; в таком запросе должны быть указаны ФИО и контактные данные Пользователя: номер телефона и адрес электронной почты; запрос направляется по адресу электронной почты DPO@inno.tech. </span><br /><br /><span style="color: rgb(0, 0, 0);">8.2. Требовать от Компании уточнения его персональных данных, их блокирования или уничтожения; </span><br /><br /><span style="color: rgb(0, 0, 0);">8.3. Отозвать согласие на обработку Персональных данных, направив письменный запрос по адресу электронной почты, указанному в п. 8.1 Политики. </span><br /><br /><span style="color: rgb(0, 0, 0);">8.4. Осуществлять иные права, предусмотренные законодательством. </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">9. Дополнительные условия</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">9.1. Компания имеет право вносить изменения в Политику без предварительного уведомления. Рекомендуем регулярно просматривать Политику, в частности, перед предоставлением персональных данных Сервису. Новая редакция Политики вступает в силу с момента ее размещения для неограниченного доступа, если иное не предусмотрено новой редакцией Политики. </span><br /><br /><span style="color: rgb(0, 0, 0);">9.2. В зависимости от настроек Сервиса Компания может получать персональные данные Пользователей от Клиентов Сервиса «DION» - юридических лиц, которые дали возможность своим работникам и иным лицам использовать Сервис «DION» по своей лицензии. В указанных случаях Клиенты Сервиса «DION» будут являться операторами персональных данных Пользователей, а условия обработки персональных данных Пользователей будут регулироваться Соглашением об обработке персональных данных между Компанией и Клиентами.</span><br /><br /><br /></div></div></div></div></div></div><!--/allrecords-->

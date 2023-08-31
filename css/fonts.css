@@ -1,0 +1,14 @@
+@font-face {
+    font-family: DrukTextWideTT;
+    src: url("../fonts/DrukTextWideCyTTBold.woff.ttf") format("woff");
+}
+
+@font-face {
+    font-family: "VTBGroupUI";
+    src: url("../fonts/VTBGroupUI-Bold.woff") format("woff");
+    src: url("../fonts/VTBGroupUI-Light.woff") format("woff");
+    src: url("../fonts/VTBGroupUI-Medium.woff") format("woff");
+    src: url("../fonts/VTBGroupUI-Regular.woff") format("woff");
+    src: url("../fonts/VTBGroupUI-SemiBold.woff") format("woff");
+}
+

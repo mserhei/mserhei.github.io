@@ -1,0 +1,439 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6849292" data-tilda-page-id="35289768" data-tilda-page-alias="agreement" data-tilda-formskey="3befead0255596de5e1bac0fb6849292" data-tilda-lazy="yes"><div id="rec570179098" class="r t-rec" style=" " data-animationappear="off" data-record-type="257" ><!-- T228 --><div id="nav570179098marker"></div><div class="tmenu-mobile tmenu-mobile_positionfixed" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__burgerlogo"><a href="" style="color:#ffffff;"><img src="images/tild6262-3562-4139-b130-373465323434__vector_41_1.svg" class="tmenu-mobile__imglogo" imgfield="img" style="max-width: 80px; width: 80px;" alt=""></a></div><div class="t-menuburger t-menuburger_second t-menuburger__small"><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span></div><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('570179098');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec570179098 .tmenu-mobile {
+background-color: #ffffff;
+}
+#rec570179098 .tmenu-mobile__menucontent_fixed {
+position: fixed;
+top: 64px;
+}
+#rec570179098 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><div id="nav570179098" class="t228 t228__positionfixed tmenu-mobile__menucontent_hidden tmenu-mobile__menucontent_fixed" style="background-color: rgba(255,255,255,0.60); " data-bgcolor-hex="#ffffff" data-bgcolor-rgba="rgba(255,255,255,0.60)" data-navmarker="nav570179098marker" data-appearoffset="" data-bgopacity-two="80" data-menushadow="" data-bgopacity="0.60" data-bgcolor-rgba-afterscroll="rgba(255,255,255,0.80)" data-menu-items-align="center" data-menu="yes"><div class="t228__maincontainer " style=""><div class="t228__padding40px"></div><div class="t228__leftside"><div class="t228__leftcontainer"><a href="" class="t228__imgwrapper" style="color:#ffffff;"><img class="t228__imglogo t228__imglogomobile" 
+src="images/tild6262-3562-4139-b130-373465323434__vector_41_1.svg" 
+imgfield="img"
+style="max-width: 80px; width: 80px; min-width: 80px; height: auto; display: block;"
+alt=""></a></div></div><div class="t228__centerside "></div><div class="t228__rightside"><div class="t228__rightcontainer"><div class="t228__right_buttons"><div class="t228__right_buttons_wrap"><div class="t228__right_buttons_but"><a href="" target="" class="t-btn t-btn_md " style="color:#000000;border:1px solid #e3e3e3;border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;font-family:VTBGroupUI;font-weight:500;"><table role="presentation" style="width:100%; height:100%;"><tr><td>Вернуться на главную</td></tr></table></a></div></div></div></div></div><div class="t228__padding40px"></div></div></div><style>@media screen and (max-width: 980px) {
+#rec570179098 .t228__leftcontainer{
+display: none;
+}
+}</style><style>@media screen and (max-width: 980px) {
+#rec570179098 .t228__leftcontainer {
+padding: 20px;
+}
+#rec570179098 .t228__imglogo {
+padding: 20px 0;
+}
+#rec570179098 .t228 {
+}
+}</style><script>window.addEventListener('load', function () {
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('570179098');
+});
+});
+window.addEventListener('resize', t_throttle(function () {
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('570179098');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('570179098', '.t228');
+});
+}));
+t_onReady(function () {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t228__list_item a');
+});
+t_onFuncLoad('t_menu__findAnchorLinks', function () {
+t_menu__findAnchorLinks('570179098', '.t228__list_item a');
+});
+t_onFuncLoad('t228__init', function () {
+t228__init('570179098');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('570179098', '.t228');
+});
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('570179098');
+});
+t_onFuncLoad('t_menu__changeBgOpacity', function () {
+t_menu__changeBgOpacity('570179098', '.t228');
+window.addEventListener('scroll', t_throttle(function () {
+t_menu__changeBgOpacity('570179098', '.t228');
+}));
+});
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('570179098', '.t228');
+});
+});</script><!--[if IE 8]><style>#rec570179098 .t228 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9ffffff', endColorstr='#D9ffffff');
+}</style><![endif]--><style>@media (hover), (min-width:0\0) {
+#rec570179098 .t-btn:not(.t-animate_no-hover):hover{
+background-color: #0062ff !important; color: #ffffff !important; border-color: #0062ff !important; }
+#rec570179098 .t-btn:not(.t-animate_no-hover){
+-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#rec570179098 .t-btntext:not(.t-animate_no-hover):hover{
+color: #ffffff !important; }
+}</style><style>#rec570179098 .t-menu__link-item{
+outline: none;
+}
+#rec570179098 .t-menu__link-item:focus-visible{
+outline: 5px auto rgba(0, 150, 255, 1);
+-webkit-outline: 5px auto rgba(0, 150, 255, 1);
+-moz-outline: 5px auto rgba(0, 150, 255, 1);
+-ms-outline: 5px auto rgba(0, 150, 255, 1);
+-o-outline: 5px auto rgba(0, 150, 255, 1);
+}
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec570179098 .t-menu__link-item,
+#rec570179098 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style></div><div id="rec570179269" class="r t-rec t-rec_pt_165 t-rec_pb_0" style="padding-top:165px;padding-bottom:0px; " data-record-type="255" ><!-- T225 --><div class="t225"><div class="t-container t-align_left"><div class="t-col t-col_8 t-prefix_2"><div class="t225__title t-title t-title_md" field="title" style=""><div style="font-size: 30px;" data-customstyle="yes"><span style="color: rgb(102, 102, 102);">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ СЕРВИСА «DION»</span></div></div> </div></div></div></div><div id="rec570179336" class="r t-rec t-rec_pt_45 t-rec_pb_60" style="padding-top:45px;padding-bottom:60px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong style="color: rgb(0, 0, 0);">1. Терминология</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><em style="color: rgb(0, 0, 0);">Аутентификация </em><br /><span style="color: rgb(0, 0, 0);">проверка введенных Пользователем данных при регистрации. </span><br /><br /><em style="color: rgb(0, 0, 0);">Идентификация</em><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);">введение незарегистрированным Пользователем данных о себе для его опознавания и присвоения идентификатора (сведения, указанные Пользователем при использовании Сервиса). </span><br /><br /><em style="color: rgb(0, 0, 0);">Клиент</em><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);">организация, которая правомерно получила право использования Сервиса для своих работников, работников своих аффилированных и иных лиц для внутренних корпоративных целей. </span><br /><br /><em style="color: rgb(0, 0, 0);">Компания</em><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);">Общество с ограниченной ответственностью «Группа компаний «Иннотех» (ОГРН 1227700086460, ИНН 9703073496, адрес: 123112, г. Москва, Пресненская наб., д.12, этаж 57, офис 9). </span><br /><br /><em style="color: rgb(0, 0, 0);">Пользователь </em><br /><span style="color: rgb(0, 0, 0);">дееспособное физическое лицо, использующее Сервис. </span><br /><br /><em style="color: rgb(0, 0, 0);">Регистрация</em><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);">совершение Пользователем действий, направленных на создание Учетной записи Пользователя в Сервисе. </span><br /><br /><em style="color: rgb(0, 0, 0);">Сервис</em><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);">программное обеспечение Платформа видеоконференцсвязи «ДИОН» (DION), расположенное по адресу https://dion.vc/, для организации проведения и участия в видеоконференцсвязи посредством информационно-телекоммуникационную сеть «Интернет», в том числе мобильное приложение DION. </span><br /><br /><em style="color: rgb(0, 0, 0);">Соглашение</em><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);">настоящее Пользовательское соглашение Сервиса «DION», расположенное по адресу https://diongo.ru/agreement. </span><br /><br /><em style="color: rgb(0, 0, 0);">Учетная запись</em><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);">часть Сервиса, доступная только зарегистрированному Пользователю, которая предназначена для просмотра, редактирования, хранения и управления данными Пользователя, а также использования Сервиса. </span><br /><br /><em style="color: rgb(0, 0, 0);">Чек-бокс</em><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);">элемент интерфейса Сервиса, позволяющий Пользователю сделать выбор относительно поставленных вопросов. </span><br /><br /><em style="color: rgb(0, 0, 0);">Партнер</em><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);">Клиента лица, у которых есть основания для правомерного использования Сервиса и которые состоят с Клиентом в договорных отношениях или взаимодействуют с Клиентом в рамках реализации совместных проектов. </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">2. Общие положения</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">2.1. Компания предлагает Пользователям использовать функциональные возможности Сервиса на условиях настоящего Соглашения. </span><br /><br /><span style="color: rgb(0, 0, 0);">2.2. Пользуясь Сервисом, Пользователь соглашается с тем, что неотъемлемой частью настоящего Соглашения является Политика конфиденциальности сервиса «DION», размещённая по адресу: https://diongo.ru/policy (далее – Политика), в соответствии с которой осуществляется обработка персональных данных Пользователя и условия которой в полной мере распространяются на использование Сервиса. </span><br /><br /><span style="color: rgb(0, 0, 0);">2 2.3. Начиная использовать Сервис/его отдельные функции и/или проставляя отметку в «Чекбоксе» с текстом «Я принимаю условия Пользовательского соглашения», Пользователь считается принявшим настоящее Соглашение на условиях простой неисключительной лицензии, а также условия Политики, в полном объеме, без всяких оговорок и исключений. В случае несогласия Пользователя с какими-либо из положений указанных документов Пользователь не вправе использовать Сервис. </span><br /><br /><span style="color: rgb(0, 0, 0);">2.4. Настоящее Соглашение и условия Политики могут быть изменены Компанией без какоголибо специального уведомления, новая редакция Соглашения и Политики вступает в силу с момента ее размещения в сети Интернет по указанным в Соглашении адресам. Пользователям рекомендуется периодически проверять актуальность данного Соглашения. </span><br /><br /><span style="color: rgb(0, 0, 0);">2.5. В случае, если Компанией были внесены какие-либо изменения в настоящее Соглашение в порядке, предусмотренном п. 2.4. Соглашения, с которыми Пользователь не согласен, он обязан прекратить использование Сервиса. Продолжение использования Пользователем Сервиса после любых изменений Соглашения подразумевает согласие Пользователя со всеми изменениями и дополнениями. </span><br /><br /><span style="color: rgb(0, 0, 0);">2.6. Используя Сервис, Пользователь дает свое согласие на получение сообщений информационного характера. </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">3. Регистрация в Сервисе и SSO</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">3.1. Пользователь, являющийся представителем Клиента, может пройти процедуру Регистрации в Сервисе либо войти через SSO (Single Sign On) если Клиент, к которому относится Пользователь, подключен к SSO-провайдеру. </span><br /><br /><span style="color: rgb(0, 0, 0);">3.2. При процедуре Регистрации Пользователь вводит имя, фамилия, отчество (по желанию), корпоративную электронную почту, пароль после чего получает код подтверждение на корпоративную электронную почту. </span><br /><br /><span style="color: rgb(0, 0, 0);">3.3. Для завершения процедуры Регистрации Пользователь вводит полученный код подтверждение в Сервисе. </span><br /><br /><span style="color: rgb(0, 0, 0);">3.4. Вход через SSO для Пользователя возможен если Клиент, к которому относится Пользователь, подключен к SSO-провайдеру. При входе через SSO Пользователь вводит адрес корпоративной электронной почты, логин и пароль от корпоративной электронной почты. </span><br /><br /><span style="color: rgb(0, 0, 0);">3.5. Пользователь, который прошел процедуру Регистрации, или вошел по SSO является авторизованным Пользователем (далее – Авторизованный Пользователь). </span><br /><br /><span style="color: rgb(0, 0, 0);">3.6. Компания не осуществляет проверку достоверности и полноты сведений, указанных Пользователем при Регистрации/входе по SSO или использовании Сервиса. Все действия, совершаемые под Учетной записью или идентификатором Пользователя, считаются совершенными лично Пользователем. </span><br /><br /><span style="color: rgb(0, 0, 0);">3.7. Пользователь самостоятельно обеспечивает безопасность и конфиденциальность сведений о логине и пароле от Учетной записи, а также несет ответственность за все действия, совершенные с использованием Учетной записи в Сервисе. Пользователь обязуется незамедлительно уведомить Компанию в случае утраты и/или наличия обоснованных подозрений в отношении нарушения конфиденциальности (компрометации) своих сведений, используемых для доступа к Сервису. </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">4. Условия использования отдельных функциональных возможностей Сервиса</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">4.1. Организация проведения и участия в видеоконференцсвязи с другими Пользователями Сервиса (далее — Конференция). </span><br /><br /><span style="color: rgb(0, 0, 0);">4.1.1. Авторизованный Пользователь, желающий создать новую Конференцию посредством Сервиса (далее — Организатор Конференции) вправе добавлять иных Пользователей для участия в Конференции, скопировав сгенерированный Сервисом индивидуальный URL-адрес Конференции (далее — Адрес Конференции) в интерфейсе Сервиса и передав его лицам, которые могут осуществить доступ к Конференции, перейдя по полученному Адресу Конференции (далее – Участник Конференции). </span><br /><br /><span style="color: rgb(0, 0, 0);">4.1.2. Любой Участник Конференции также вправе копировать Адрес Конференции и передавать его лицам, которые могут осуществить доступ к Конференции. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.1.3. Участник Конференции вправе осуществлять доступ к Конференции посредством полученного им Адреса Конференции без проведения Авторизации в Сервисе. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.1.4. Организатор Конференции является ее администратором (далее — Администратор). Администратору могут быть доступны функциональные возможности отключения микрофона и/или передачи видеоизображения других Участников Конференции, приостановления ведения Записи и иные функциональные возможности, предусмотренные Сервисом. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.1.5. Авторизованный Пользователь осведомлен и соглашается с тем, что при его участии в Конференции будет отображено и доступно для иных Участников Конференции его публичное отображаемое имя (имя и фамилия, если не указано иное), указанное им ранее при регистрации или в настройках Учетной записи, адрес электронной почты, а также, в случае отключенной функции передачи видеоизображения, - изображение со страницы его профиля (аватар). </span><br /><br /><span style="color: rgb(0, 0, 0);">4.1.6. Участник Конференции, осуществивший доступ к Конференции посредством полученного им Адреса Конференции без проведения авторизации в Сервисе, вправе выбрать отображаемое имя в настройках Сервиса, которое будет отображено и доступно для иных Участников Конференции. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.1.7. При участии в Конференции Пользователям доступен чат Сервиса для обмена сообщениями. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.2. Демонстрация экрана своего устройства другим Участникам Конференции. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.2.1. Активируя режим демонстрации экрана своего устройства, Пользователь осознает, что Участникам Конференции становится доступной для просмотра информация, отображаемая в момент демонстрации в активном окне экрана устройства Пользователя, а также соглашается с тем, что в результате демонстрации Участникам Конференции может быть раскрыта конфиденциальная информация, доступная для них в момент демонстрации экрана Пользователя. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.3. Осуществление записи Конференции (далее – Запись). </span><br /><br /><span style="color: rgb(0, 0, 0);">4.3.1. Начиная использовать Сервис и принимая настоящее Соглашение, Пользователь выражает согласие с тем, что при его участии в Конференции Авторизованными Пользователями может осуществляться Запись. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.3.2. Пользователи, участвующие в Конференции, уведомляются о ведении Записи. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.3.3. После осуществления Записи Авторизованным Пользователем, Запись, а также история взаимодействия Пользователей посредством Сервиса, включая сообщения в чате Сервиса, может быть сохранена в Сервисе и на устройстве Авторизованного Пользователя. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.3.4. Авторизованный Пользователь обязуется использовать Запись в соответствии с применимым законодательством и самостоятельно несет ответственность перед третьими лицами за возможные нарушения прав третьих лиц, связанные с осуществлением Записи, сохранением ее на устройстве Авторизованного Пользователя и ее использованием, в том числе, но не ограничиваясь, за возможные нарушения законодательства о персональных данных, о частной жизни и использовании изображения гражданина, авторских прав, прав на средства индивидуализации и иные объекты интеллектуальной собственности. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.3.5. Компания не несет ответственности за осуществление Авторизованным Пользователем Записи и ее последующее использование. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.4. Корпоративный справочник Клиентов (далее – Корпоративный справочник). </span><br /><br /><span style="color: rgb(0, 0, 0);">4.4.1. В случае, если соответствующий функционал предоставляется Клиенту, при регистрации в Сервисе Пользователь, являющийся представителем Клиента, соглашается на передачу Клиентом его данных (ФИО, номер телефона, адрес корпоративной электронной почты, место работы, отдел и должность) в Корпоративный справочник Клиента в целях организации взаимодействия в качестве представителя Клиента с другими представителями Клиента и зарегистрированными в Сервисе Партнерами Клиента. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.4.2. В Корпоративный справочник могут быть включены указанные в настоящем пункте данные, которые предоставляются Авторизованными Пользователями самостоятельно. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.4.3. Доступ к Корпоративному справочнику предоставляется Авторизованным Пользователям Партнеров Клиента, круг которых определяет Клиент. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.4.4. При использовании Корпоративного справочника Авторизованным Пользователям может быть доступна функция обмена информацией и сообщениями (в т.ч. создания и размещения сообщений в чатах, редактирование и удаление размещенных сообщений), отправка и получение сообщений, а также аудио-, видеоматериалов и изображений (далее — Контент) с другими Авторизованными Пользователями из Корпоративного справочника. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.4.5. Компания вправе осуществлять хранение истории взаимодействия между Авторизованными Пользователями посредством соответствующих функций Сервиса в целях осуществления контроля за соблюдением настоящего Соглашения, улучшения качества Сервиса, а также в рамках выполнения требований законодательства и Политики. Доступ Компании и привлекаемых им лиц к такой истории возможен в указанных целях, а также по запросу участников взаимодействия и в случаях, установленных в законе. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.4.6. При использовании Корпоративного справочника Авторизованным Пользователям может быть доступна функция звонков с другими Авторизованными пользователями из Корпоративного справочника. 4.5. Размещение Контента в Сервисе. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.5.1. Авторизованный Пользователь может осуществлять экспорт информации для последующего размещения в Сервисе и распространять Контент в Сервисе, а также редактировать и удалять размещенный им Контент. Авторизованный Пользователь самостоятельно несет ответственность перед третьими лицами за свои действия, связанные с размещением и распространением Контента в Сервисе, в том числе за то, что содержание Контента соответствует требованиям применимого законодательства и не нарушает права и законные интересы третьих лиц. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.5.2. Авторизованный пользователь вправе создавать каналы, загружать в них видеоматериалы и другой Контент, ставить отметки "Нравится" и выполнять иные действия. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.5.3. Авторизованный Пользователь вправе по согласованию с Клиентом, представителем которого он является, сделать канал доступным для представителей зарегистрированных в Сервисе Партнеров Клиента путем согласования с Компанией списка доменов зарегистрированных в Сервисе Партнеров Клиента. Начиная согласование списка 5 доменов с Компанией, представителем которой он является, Авторизованный Пользователь подтверждает, что он получил все необходимые согласования внутри Компании. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.5.4. Авторизованный Пользователь самостоятельно и за свой счет обязуется урегулировать все претензии третьих лиц и Компании, связанные с размещением (редактированием) им Контента. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.5.5. В случае возникновения спорной ситуации бремя доказывания того, что размещаемый Авторизованным Пользователем Контент не нарушает чьих-либо прав, лежит на таком Авторизованном Пользователе. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.5.6. Сервис также предоставляет Авторизованному Пользователю возможность размещения комментариев к информации, доступной в Сервисе. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.5.7. Размещенный в Сервисе Контент и опубликованные комментарии Авторизованного Пользователя могут сопровождаться изображением Учетной записи, а также ФИО Авторизованного Пользователя. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.5.8. Авторизованный Пользователь признает и соглашается с тем, что Компания может просматривать Контент, размещенный Авторизованным Пользователем на Сервисе. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.5.9. Авторизованный Пользователь также соглашается с тем, что Компания имеет право отказать Авторизованному Пользователю в размещении и/или распространении им в Сервисе Контента, ограничить доступ к Контенту, размещенным Авторизованным Пользователем в Сервисе, или удалить Контент в случае выявления его несоответствия Соглашению, в том числе, в результате получения жалоб от других Авторизованных Пользователей. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.5.10. Размещая в Сервисе Контент, Авторизованный Пользователь автоматически безвозмездно, безусловно и безотзывно предоставляет Компании неисключительную лицензию на использование Контента, полностью или частично (в том числе, на отдельное использование аудиодорожки аудиовизуального произведения), на территории всего мира на срок размещения Контента в Сервисе по усмотрению Компании, в том числе но не ограничиваясь, на воспроизведение, копирование, подбор, систематизацию, преобразование, изменение, редактирование, перевод и иную переработку Контента любыми законными способами, доведение до всеобщего сведения другим Авторизированным Пользователям Сервиса. Также, размещая в Сервисе Контент, Авторизованный Пользователь подтверждает, что обладает соответствующими правами и полномочиями для предоставления Компании указанных прав на использование размещенного Контента. Компания имеет право использовать соответствующий Контент как с указанием имени автора такого Контента, так и без указания имени автора (в качестве имени автора при этом будет указываться имя Авторизованного Пользователя, разместившего Контент, который он указал при регистрации). Компания вправе передавать права, указанные в настоящем пункте третьим лицам. В случае если Авторизованный Пользователь не вправе предоставить Компании право использования каких-либо материалов в составе Контента указанными способами, он обязан воздержаться от размещения таких материалов на Сервисе. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.6. Ведения и/или подключения к трансляции Конференции для зрителей, происходящей в режиме реального времени (далее – Трансляция). </span><br /><br /><span style="color: rgb(0, 0, 0);">4.6.1. Трансляцию может проводить одновременно несколько соведущих (Авторизованных пользователей), которым доступна соответствующая функциональность посредством Сервиса. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.6.2. Во время осуществления Трансляции Пользователям может быть доступно взаимодействие в чате Трансляции. После окончания Трансляции, чат Сервиса может быть сохранен на устройстве соведущих Трансляции. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.6.3. При участии в Трансляции в качестве зрителя или соведущего Пользователь обязуется соблюдать применимое законодательство и самостоятельно несет ответственность перед третьими лицами за возможные нарушения прав третьих лиц, связанные с осуществлением Трансляции, сохранением ее на устройстве Пользователя и ее использованием, в том числе, но не ограничиваясь, за возможные нарушения законодательства о персональных данных, о частной жизни и использовании изображения гражданина, авторских прав, прав на средства индивидуализации и иные объекты интеллектуальной собственности. </span><br /><br /><span style="color: rgb(0, 0, 0);">4.6.4. Компания не несет ответственности за осуществление Авторизованным Пользователем Трансляции и ее последующее использование. </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">5. Ограничения при использовании Сервиса</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">5.1. При использовании Сервиса Пользователь не вправе: </span><br /><br /><span style="color: rgb(0, 0, 0);">5.1.1. загружать, посылать, передавать или любым другим способом размещать и/или распространять Контент, который является незаконным, вредоносным, клеветническим, оскорбляет нравственность, демонстрирует (или является пропагандой) насилия и жестокости, нарушает права интеллектуальной собственности, пропагандирует ненависть и/или дискриминацию людей по расовому, этническому, половому, религиозному, социальному признакам, содержит нецензурную брань, оскорбления в адрес каких-либо лиц или организаций, содержит публичные призывы к осуществлению террористической деятельности или публично оправдывающих терроризм, либо иные материалы экстремистского характера, содержит элементы (или является пропагандой) порнографии, детской эротики, представляет собой рекламу (или является пропагандой) услуг сексуального характера (в том числе под видом иных услуг), разъясняет порядок изготовления, применения или иного использования наркотических веществ или их аналогов, взрывчатых веществ или иного оружия; </span><br /><br /><span style="color: rgb(0, 0, 0);">5.1.2. нарушать права третьих лиц, в том числе несовершеннолетних лиц и/или причинять им вред в любой форме; </span><br /><br /><span style="color: rgb(0, 0, 0);">5.1.3. выдавать себя за другого человека или представителя организации и/или сообщества без достаточных на то прав, в том числе за сотрудников Компании, за модераторов форумов, за владельца сайта, а также применять любые другие формы и способы незаконного представительства других лиц в сети, а также вводить пользователей или Компанию в заблуждение относительно свойств и характеристик каких-либо субъектов или объектов; </span><br /><br /><span style="color: rgb(0, 0, 0);">5.1.4. загружать, посылать, передавать или любым другим способом размещать и/или распространять Контент, при отсутствии прав на такие действия согласно законодательству или каким-либо договорным отношениям; </span><br /><br /><span style="color: rgb(0, 0, 0);">5.1.5. загружать, посылать, передавать или любым другим способом размещать и/или распространять не разрешенную специальным образом рекламную информацию, спам (в том числе и поисковый), списки чужих адресов электронной почты, схемы «пирамид», многоуровневого (сетевого) маркетинга (MLM), системы интернет-заработка и e-mailбизнесов, «письма счастья», а также использовать Сервис для участия в этих мероприятиях, или использовать Сервис, исключительно для перенаправления пользователей на страницы других доменов; </span><br /><br /><span style="color: rgb(0, 0, 0);">5.1.6. загружать, посылать, передавать или любым другим способом размещать и/или распространять какие-либо материалы, содержащие вирусы или другие компьютерные коды, файлы или программы, предназначенные для нарушения, уничтожения либо ограничения функциональности любого компьютерного или телекоммуникационного оборудования или программ, для осуществления несанкционированного доступа, а также 7 серийные номера к коммерческим программным продуктам и программы для их генерации, логины, пароли и прочие средства для получения несанкционированного доступа к платным ресурсам в Интернете, а также размещения ссылок на вышеуказанную информацию; </span><br /><br /><span style="color: rgb(0, 0, 0);">5.1.7. несанкционированно собирать и хранить персональные данные других лиц; </span><br /><br /><span style="color: rgb(0, 0, 0);">5.1.8. нарушать нормальную работу веб-сайтов и Сервиса; </span><br /><br /><span style="color: rgb(0, 0, 0);">5.1.9. содействовать действиям, направленным на нарушение ограничений и запретов, налагаемых Соглашением; </span><br /><br /><span style="color: rgb(0, 0, 0);">5.1.10. воспроизводить, повторять и копировать, продавать и перепродавать, а также использовать для каких-либо коммерческих целей какие-либо части Сервиса (включая Контент, доступный Пользователю посредством Сервиса), или доступ к ним, кроме тех случаев, когда Пользователь получил такое разрешение от Компании; </span><br /><br /><span style="color: rgb(0, 0, 0);">5.1.11. неправомерно предоставлять Компании конфиденциальную информацию, доступ Компании к которой ограничен в соответствии с действующим законодательством Российской Федерации; </span><br /><br /><span style="color: rgb(0, 0, 0);">5.1.12. другим образом нарушать нормы законодательства, в том числе нормы международного права. </span><br /><br /><span style="color: rgb(0, 0, 0);">5.2. В период проведения тестирования некоторые функции Сервиса могут быть доступны в ограниченном режиме, Сервис также может претерпевать изменения, как в отношении содержания и функциональности, так и во внешнем виде. </span><br /><br /><span style="color: rgb(0, 0, 0);">5.3. Возможность использования отдельного функционала Сервиса, указанного в разделе 4 Соглашения, зависит от договорных отношений Компании или уполномоченных Компанией юридических лиц с Клиентом в связи с чем Авторизованному Пользователю может быть недоступен весь функционал. </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">6. Интеллектуальная собственность</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">6.1. Исключительные права на все объекты, составляющие дизайн Сервиса в целом и отдельных его элементов, на функциональность Сервиса, а также сам Сервис принадлежат Компании. Компания гарантирует наличие всех необходимых прав для целей предоставления права использования Сервиса Клиентам и Пользователям. Начиная использовать Сервис, Пользователь гарантирует, что не осуществляет и не будет осуществлять каких-либо действий, направленных на обход технических средств защиты от несанкционированного использования указанных выше объектов. Любое их копирование, воспроизведение, переработка, распространение, доведение до всеобщего сведения, обход средств технической защиты, либо иное использование вне рамок возможностей, предоставляемых Сервисом, запрещается. </span><br /><br /><span style="color: rgb(0, 0, 0);">6.2. Пользователь не имеет права изменять, декомпилировать, дизассемблировать, дешифровать и производить иные действия с кодом Сервиса, имеющие целью извлечение исходного кода Сервиса и/или получение информации о реализации алгоритмов, используемых в Сервисе, создавать производные произведения с использованием Сервиса и/или его элементов, а также осуществлять (разрешать осуществлять) иное использование Сервиса, без письменного согласия Компании. </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">7. Ограничение ответственности</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">7.1. Сервис предоставляется «как есть». Компания не гарантирует соответствие Сервиса целям и ожиданиям Пользователя, сохранность данных, представленных и размещенных Пользователем в Сервисе, бесперебойную и безошибочную работу Сервиса в целом и его отдельных функциональных возможностей, в частности. Компания вправе в любой момент полностью или частично изменить функциональные возможности, предоставляемые Сервисом. </span><br /><br /><span style="color: rgb(0, 0, 0);">7.2. Компания не несет ответственности за какие-либо прямые или косвенные последствия какого-либо использования или невозможности использования Сервиса и/или ущерб, причиненный Пользователю и/или третьим сторонам в результате какого-либо использования, неиспользования или невозможности использования Сервиса или отдельных его функций, в том числе из-за возможных ошибок или сбоев в работе Сервиса. </span><br /><br /><span style="color: rgb(0, 0, 0);">7.3. Получая доступ к Сервису, Пользователь соглашается с тем, что используемые им устройства, сервисное обеспечение, скорость работы сети «Интернет» полностью соответствуют необходимым техническим характеристикам, позволяющим осуществить использование Сервиса в допустимом для Пользователя качестве. Компания не несет ответственности за невозможность принятия участия в Конференции, а также низкое качество передачи, обусловленное спецификой работы устройств Пользователя и качеством его связи. </span><br /><br /><span style="color: rgb(0, 0, 0);">7.4. Все вопросы, касающиеся настройки доступа в сеть Интернет, настройки устройств и программного обеспечения Пользователя не подпадают под действие настоящего Соглашения и подлежат самостоятельному урегулированию со стороны Пользователя. Компания не осведомлена о содержании проводимых посредством Сервиса Конференций, целях их проведения, составе передаваемой в рамках проведения Конференции информации. Пользователь самостоятельно несет ответственность за действия, совершенные им с использованием функций Сервиса, в том числе за ущерб, причиненный иным Пользователям и третьим лицам. </span><br /><br /><span style="color: rgb(0, 0, 0);">7.5. Компания оставляет за собой право на свое усмотрение ограничить доступ Пользователя к Сервису (или к определенным функциям Сервиса, если это возможно технологически) с использованием его Учетной записи, приостановить доступ или полностью заблокировать Учетную запись Пользователя при нарушении настоящего Соглашения и Политики, либо применить к Пользователю иные меры с целью соблюдения требований законодательства или прав и законных интересов третьих лиц без уведомления Пользователя и без объяснения причин. </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">8. Иные положения</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">8.1. Выполнение функций Сервиса возможно только при наличии доступа к сети Интернет. Пользователь самостоятельно получает и оплачивает такой доступ на условиях и по тарифам своего оператора связи или провайдера доступа к сети Интернет. </span><br /><span style="color: rgb(0, 0, 0);">8.2. Сервис может время от времени автоматически загружать и устанавливать обновления, которые направлены на улучшение Сервиса и могут иметь форму патчей, дополнительных модулей или полностью новых версий Сервиса. Пользователь настоящим уведомлен и соглашается с автоматическим обновлением Сервиса, включая запрос, загрузку и установку обновлений Сервиса на устройство Пользователя без каких либо дополнительных уведомлений. </span><br /><br /><span style="color: rgb(0, 0, 0);">8.3. Действие Соглашения распространяется на все последующие обновления/новые версии Сервиса и/или его компонентов. Установка обновления/новой версии Сервиса означает принятие Пользователем условий Соглашения для соответствующих обновлений/новых версий Сервиса, если обновление/установка новой версии не сопровождается иным пользовательским соглашением.</span><br /><br /><span style="color: rgb(0, 0, 0);"> 8.4. Любые публичные сообщения Пользователя, относящиеся к предмету Соглашения, должны быть согласованы Пользователем с Компанией заранее. </span><br /><br /><span style="color: rgb(0, 0, 0);">8.5. В случае возникновения проблем, замечаний или предложений относительно улучшения работы Программы Пользователь может направить отзыв, воспользовавшись специальным функционалом Сервиса, либо направить по адресу support@dion.vc. </span><br /><br /><span style="color: rgb(0, 0, 0);">8.6. Компания в целях защиты оборудования Пользователя и собственного оборудования, вправе ограничить использование функций Сервиса Пользователем при выявлении признаков подозрительной активности в Сервисе или применения Пользователем вредоносных программ или кодов. Пользователь уведомлен и согласен с тем, что Компания, в указанных целях, вправе осуществлять анализ и исследование таких вредоносных программ и кодов, для улучшения качества работы автоматических средств фильтрации и антивирусной защиты, используемой Компанией. </span><br /><br /><span style="color: rgb(0, 0, 0);">8.7. Ничто в Соглашении не подразумевает возникновения прав и обязанностей между Пользователем и Компанией, прямо не указанных в Соглашении. В случае возникновения обязательств, выходящих за рамки Соглашения и/или носящих финансовый характер, они будут регулироваться отдельными договорами, заключаемыми между Клиентом и Компанией в установленном законодательством Российской Федерации порядке. </span><br /><br /><span style="color: rgb(0, 0, 0);">8.8. Все споры и разногласия, возникшие из Соглашения или в связи с ним, решаются Пользователем и Компанией путем переговоров. Споры и разногласия, вытекающие из Соглашения, по которым Пользователь и Компания не достигли договоренности, подлежат рассмотрению в соответствии с законодательством Российской Федерации в Мещанском районном суде г. Москвы.</span><br /><br /><br /></div></div></div></div></div></div><!--/allrecords-->

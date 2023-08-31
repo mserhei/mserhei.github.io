@@ -1,0 +1,439 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6849292" data-tilda-page-id="35290358" data-tilda-page-alias="personal_data" data-tilda-formskey="3befead0255596de5e1bac0fb6849292" data-tilda-lazy="yes"><div id="rec570302734" class="r t-rec" style=" " data-animationappear="off" data-record-type="257" ><!-- T228 --><div id="nav570302734marker"></div><div class="tmenu-mobile tmenu-mobile_positionfixed" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__burgerlogo"><a href="" style="color:#ffffff;"><img src="images/tild6262-3562-4139-b130-373465323434__vector_41_1.svg" class="tmenu-mobile__imglogo" imgfield="img" style="max-width: 80px; width: 80px;" alt=""></a></div><div class="t-menuburger t-menuburger_second t-menuburger__small"><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span></div><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('570302734');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec570302734 .tmenu-mobile {
+background-color: #ffffff;
+}
+#rec570302734 .tmenu-mobile__menucontent_fixed {
+position: fixed;
+top: 64px;
+}
+#rec570302734 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><div id="nav570302734" class="t228 t228__positionfixed tmenu-mobile__menucontent_hidden tmenu-mobile__menucontent_fixed" style="background-color: rgba(255,255,255,0.60); " data-bgcolor-hex="#ffffff" data-bgcolor-rgba="rgba(255,255,255,0.60)" data-navmarker="nav570302734marker" data-appearoffset="" data-bgopacity-two="80" data-menushadow="" data-bgopacity="0.60" data-bgcolor-rgba-afterscroll="rgba(255,255,255,0.80)" data-menu-items-align="center" data-menu="yes"><div class="t228__maincontainer " style=""><div class="t228__padding40px"></div><div class="t228__leftside"><div class="t228__leftcontainer"><a href="" class="t228__imgwrapper" style="color:#ffffff;"><img class="t228__imglogo t228__imglogomobile" 
+src="images/tild6262-3562-4139-b130-373465323434__vector_41_1.svg" 
+imgfield="img"
+style="max-width: 80px; width: 80px; min-width: 80px; height: auto; display: block;"
+alt=""></a></div></div><div class="t228__centerside "></div><div class="t228__rightside"><div class="t228__rightcontainer"><div class="t228__right_buttons"><div class="t228__right_buttons_wrap"><div class="t228__right_buttons_but"><a href="" target="" class="t-btn t-btn_md " style="color:#000000;border:1px solid #e3e3e3;border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;font-family:VTBGroupUI;font-weight:500;"><table role="presentation" style="width:100%; height:100%;"><tr><td>Вернуться на главную</td></tr></table></a></div></div></div></div></div><div class="t228__padding40px"></div></div></div><style>@media screen and (max-width: 980px) {
+#rec570302734 .t228__leftcontainer{
+display: none;
+}
+}</style><style>@media screen and (max-width: 980px) {
+#rec570302734 .t228__leftcontainer {
+padding: 20px;
+}
+#rec570302734 .t228__imglogo {
+padding: 20px 0;
+}
+#rec570302734 .t228 {
+}
+}</style><script>window.addEventListener('load', function () {
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('570302734');
+});
+});
+window.addEventListener('resize', t_throttle(function () {
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('570302734');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('570302734', '.t228');
+});
+}));
+t_onReady(function () {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t228__list_item a');
+});
+t_onFuncLoad('t_menu__findAnchorLinks', function () {
+t_menu__findAnchorLinks('570302734', '.t228__list_item a');
+});
+t_onFuncLoad('t228__init', function () {
+t228__init('570302734');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('570302734', '.t228');
+});
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('570302734');
+});
+t_onFuncLoad('t_menu__changeBgOpacity', function () {
+t_menu__changeBgOpacity('570302734', '.t228');
+window.addEventListener('scroll', t_throttle(function () {
+t_menu__changeBgOpacity('570302734', '.t228');
+}));
+});
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('570302734', '.t228');
+});
+});</script><!--[if IE 8]><style>#rec570302734 .t228 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9ffffff', endColorstr='#D9ffffff');
+}</style><![endif]--><style>@media (hover), (min-width:0\0) {
+#rec570302734 .t-btn:not(.t-animate_no-hover):hover{
+background-color: #0062ff !important; color: #ffffff !important; border-color: #0062ff !important; }
+#rec570302734 .t-btn:not(.t-animate_no-hover){
+-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#rec570302734 .t-btntext:not(.t-animate_no-hover):hover{
+color: #ffffff !important; }
+}</style><style>#rec570302734 .t-menu__link-item{
+outline: none;
+}
+#rec570302734 .t-menu__link-item:focus-visible{
+outline: 5px auto rgba(0, 150, 255, 1);
+-webkit-outline: 5px auto rgba(0, 150, 255, 1);
+-moz-outline: 5px auto rgba(0, 150, 255, 1);
+-ms-outline: 5px auto rgba(0, 150, 255, 1);
+-o-outline: 5px auto rgba(0, 150, 255, 1);
+}
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec570302734 .t-menu__link-item,
+#rec570302734 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style></div><div id="rec570303056" class="r t-rec t-rec_pt_165 t-rec_pb_0" style="padding-top:165px;padding-bottom:0px; " data-record-type="255" ><!-- T225 --><div class="t225"><div class="t-container t-align_left"><div class="t-col t-col_8 t-prefix_2"><div class="t225__title t-title t-title_md" field="title" style=""><div style="font-size: 30px;" data-customstyle="yes"><span style="color: rgb(102, 102, 102);">СОГЛАШЕНИЕ ОБ ОБРАБОТКЕ ПЕРСОНАЛЬНЫХ ДАННЫХ</span></div></div> </div></div></div></div><div id="rec570304124" class="r t-rec t-rec_pt_45 t-rec_pb_60" style="padding-top:45px;padding-bottom:60px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="line-height:32px;" data-customstyle="yes"><span style="color: rgb(0, 0, 0);"> </span><br /><strong style="color: rgb(0, 0, 0);">Преамбула.</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">Соглашение заключается для использования Лицензиатом программы для ЭВМ – Платформа видео-конференц-связи «ДИОН», запись в Едином реестре российских программ для электронных вычислительных машин и баз данных № 15232 от 14.10.2022 г. (далее – Программа); Лицензиат использует Программу на основании сублицензионного договора, а ООО «ГК «Иннотех» является правообладателем и лицензиаром Программы; При использовании Программы Лицензиат может передавать ООО «ГК «Иннотех» персональные данные своих работников (и/или иных лиц, которые могут использовать Программу) (далее – Конечные пользователи) в случаях когда: </span><br /><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">ООО «ГК «Иннотех» будет регистрировать Конечных пользователей в Программе через механизм SSO и/или на основании списков Конечных пользователей, которые предоставлены Лицензиатом; </span></li></ul><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Лицензиат будет использовать Программу, как адресную книгу (корпоративный справочник); </span></li></ul><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">ООО «ГК «Иннотех» будет осуществлять техническое обслуживание Программы и непосредственном обслуживать работу с Программой Конечных пользователей, которые используют Программу на основании сублицензионного соглашения. </span></li></ul><br /><span style="color: rgb(0, 0, 0);">В вышеуказанных случаях Лицензиат является оператором персональных данных Конечных пользователей, использующих Программу, которые передаются ООО «ГК «Иннотех». Лицензиат поручает ООО «ГК «Иннотех» обработку персональных данных в соответствии с требованиями части 3 статьи 6 Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных» на следующих условиях: </span><br /><br /><br /><br /><strong style="color: rgb(0, 0, 0);">1. Цель обработки персональных данных:</strong><span style="color: rgb(0, 0, 0);"> предоставление Программы Конечным пользователям, которые являются работниками Лицензиата (иными лицами, данные которых передаются ООО «ГК «Иннотех»), в том числе: </span><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">сопровождение регистрации учетной записи в Программе; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">предоставление сервиса по проведению конференций, вебинаров и обмениваться сообщениями при их проведении, использование корпоративных справочников; - техническое и гарантийное обслуживание Программы. </span></li></ul><br /><br /><strong style="color: rgb(0, 0, 0);">2. Перечень персональных данных, поручаемых на обработку</strong><span style="color: rgb(0, 0, 0);"> (далее – Персональные данные):</span><br /><br /><em style="color: rgb(0, 0, 0);">2.1. Функционал Программы</em><br /><span style="color: rgb(0, 0, 0);">Сопровождение регистрации учетной записи в Программе</span><br /><br /><em style="color: rgb(0, 0, 0);">Обрабатываемые Персональные данные</em><br /><span style="color: rgb(0, 0, 0);">Фамилия, имя, отчество, аватар (фотография), пол, адрес корпоративной электронной почты, сведения о месте работы, информация об устройствах</span><br /><br /><em style="color: rgb(0, 0, 0);">2.2. Функционал Программы</em><br /><span style="color: rgb(0, 0, 0);">Проведение конференций, вебинаров, обмен сообщениями, использование справочника в Программе</span><br /><br /><em style="color: rgb(0, 0, 0);">Обрабатываемые Персональные данные</em><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Информация о Пользователе, его профиле и иная, предоставляемая Пользователем при регистрации (фамилия, имя, отчество; аватар (фотография); адрес электронной почты, а также другие данные, которые вводит Пользователь, в том числе никнейм, сведения о занимаемой должности, компании-работодателе); </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);"> Контактный номер телефона и адрес электронной почты; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Учетная запись; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Интеграция контактов и календаря; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Содержание конференций, видеозаписи, а также сообщений чата в ходе использования Сервиса; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Иная информация, оставленная Конечным пользователем в ходе коммуникации с Лицензиатом при использовании Сервиса.</span></li></ul><br /><em style="color: rgb(0, 0, 0);">2.3. Функционал Программы</em><br /><span style="color: rgb(0, 0, 0);">Оказание технической поддержки и обработка отзывов об использовании Программы</span><br /><br /><em style="color: rgb(0, 0, 0);">Обрабатываемые Персональные данные</em><br /><span style="color: rgb(0, 0, 0);">Фамилия, имя, отчество, аватар (фотография), пол, адрес корпоративной электронной почты, сведения о месте работы, информация об устройствах, содержание оставленного отзыва/обращения и иная информация, оставленная Пользователем в ходе коммуникации</span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">3. Субъекты персональных данных.</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">Работники Лицензиата и иные лица со стороны Лицензиата, которые являются Конечными пользователями Программы и данные которых передаются ООО «ГК «Иннотех» в результате использования Программы<sup>1</sup> . </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">4. Заверения Лицензиата.</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">Лицензиат в соответствии со статьей 431.2 Гражданского кодекса РФ заверяет ООО «ГК «Иннотех» и обязуется обеспечивать достоверность этих заверений достоверными в любой момент времени/периода обработки Персональных данных в течении действия всех лицензий (сублицензий) на Программу: </span><br /><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">у Лицензиата есть законные основания для поручения обработки Персональных данных ООО «ГК «Иннотех»; </span></li></ul><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Лицензиат обменивается с ООО «ГК «Иннотех» (передает и/или получает) персональные данные защищенным способом, обеспечивающим надлежащую защиту от несанкционированного доступа и иных нарушений конфиденциальности/целостности/доступности персональных данных; </span></li></ul><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Лицензиат не использует Программу с нарушением законодательства и сублицензионного договора. </span></li></ul><br /><br /><strong style="color: rgb(0, 0, 0);">5. Действия (операции) с Персональными данными.</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">ООО «ГК «Иннотех» вправе осуществлять с персональными данными такие действия как сбор, запись, систематизация, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передача (предоставление, доступ), получение, блокирование, удаление и уничтожение<sup>2</sup> с использованием средств автоматизации и без использования средств автоматизации. </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">6. Передача Персональных данных третьим лицам.</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">ООО «ГК «Иннотех» вправе передавать Персональные данные (путем перепоручения обработки и без такого перепоручения) следующим третьим лицам:</span><br /><br /><span style="color: rgb(0, 0, 0);"> </span><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">дата-центру: Обществу с ограниченной ответственностью «Т1Клауд» (ИНН 7720479358, ОГРН 1197746515405, адрес: 111395, г. Москва, улица Юности., д.13А, каб. 8) с целью хранения данных при функционировании Программы;</span></li></ul><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">сторонним поставщикам услуг, в случае если ООО «ГК «Иннотех» будет их привлекать в рамках хостинга Программы, анализа данных, для осуществления технического обслуживания Программы. </span></li></ul><br /><br /><strong style="color: rgb(0, 0, 0);">7. Конфиденциальность Персональных данных.</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">Обрабатывая Персональные данные по поручению Лицензиата, ООО «ГК «Иннотех» обязан придерживаться принципов законодательства в области персональных данных, соблюдать конфиденциальность Персональных данных и обеспечивать их безопасность. </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">8. Меры по соблюдению требований законодательства.</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">ООО «ГК «Иннотех» при обработке Персональных данных по поручению Лицензиата обязан принимать меры, необходимые и достаточные для выполнения своих обязанностей, предусмотренные статьями 18 и 18.1 Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных». </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">9. Меры по обеспечению безопасности Персональных данных.</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">ООО «ГК «Иннотех» обязан принимать необходимые меры безопасности или обеспечивать их принятие при обработке Персональных данных в том числе для поддержания соответствующего уровня защищенности Персональных данных при их обработке в информационных системах, в зависимости от типа актуальных угроз безопасности Персональных данных в соответствии со статьей 19 Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных»: </span><br /><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">определить угрозы безопасности Персональных данных, которые могут возникнуть при их обработке в информационных системах ООО «ГК «Иннотех»; </span></li></ul><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">определить уровень защищенности Персональных данных при их обработке в информационных системах ООО «ГК «Иннотех» и выполнять требования, установленные Постановлением Правительства Российской Федерации от 1 ноября 2012 г. № 1119 «Об утверждении требований к защите персональных данных при их обработке в информационных системах персональных данных»; </span></li></ul><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">оценивать возможный вред субъекту персональных данных в случае реализации угроз безопасности Персональных данных; - применять средства защиты информации, прошедшие процедуру оценки соответствия в установленном порядке; </span></li></ul><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">оценивать эффективность принимаемых мер по обеспечению безопасности Персональных данных до ввода в эксплуатацию информационных систем Обработчика; </span></li></ul><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">вести учет машинных носителей Персональных данных, если порученные на обработку Персональные данные будут обрабатываться на машинных носителях; </span></li></ul><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">обнаруживать факты несанкционированного доступа к Персональным данным и принимать, в связи с этим необходимые меры; - восстанавливать Персональные данные, модифицированные или уничтоженные вследствие несанкционированного доступа к ним; </span></li></ul><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">устанавливать правила доступа к Персональным данным в информационных системах Обработчика, а также обеспечивать регистрацию и учет всех действий, совершаемых с Персональными данными в информационных системах; </span></li></ul><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">осуществлять контроль за принимаемыми мерами по обеспечению безопасности Персональных данных и уровнем защищенности информационных систем Обработчика. </span></li></ul><br /><br /><strong style="color: rgb(0, 0, 0);">10. Подтверждение выполнения обязанностей, установленных настоящим разделом Соглашения.</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">В течение всего срока действия настоящего Договора Лицензиат вправе запросить, а ООО «ГК «Иннотех» обязан предоставить на Электронную почту в течение 10 рабочих дней с момента получения запроса, информацию (включая документы), подтверждающую принятие мер и соблюдение в целях исполнения поручения Лицензиата требований, установленных настоящим разделом Договора и законодательством Российской Федерации. </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">11. Уведомление об инциденте безопасности Персональных данных.</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">В случае установления факта неправомерной или случайной передачи (предоставления, распространения, доступа) Персональных данных, повлекшей нарушение прав субъектов персональных данных, ООО «ГК Иннотех» обязано с момента выявления такого инцидента уведомить Лицензиата по адресу Электронной почты о следующем: </span><br /><br /><span style="color: rgb(0, 0, 0);">11.1. В течение 20 (двадцати) часов: </span><br /><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">о произошедшем инциденте, включая перечень Персональных данных, категории субъектов персональных данных, количество субъектов персональных данных, затронутых инцидентом, </span></li></ul><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">о предполагаемых причинах, повлекших нарушение прав субъектов персональных данных, </span></li></ul><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">о предполагаемом вреде, нанесенном субъектам персональных данных, </span></li></ul><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">о принятых мерах по устранению последствий соответствующего инцидента. </span></li></ul><br /><span style="color: rgb(0, 0, 0);">11.2. В течение 64 (шестидесяти четырех) часов: о результатах внутреннего расследования выявленного инцидента, а также предоставить сведения о лицах, действия которых стали причиной выявленного инцидента (при наличии). </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">12. Сотрудничество при работе с Персональными данными.</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">Настоящим Стороны соглашаются добросовестно сотрудничать и оказывать необходимое содействие друг другу при урегулировании с субъектами Персональных данных, уполномоченными органами государственной власти и иными лицами запросов, претензий, исков или требований, полученных Лицензиатом и (или) ООО «ГК «Иннотех» в отношении настоящего раздела Договора. </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">13. Срок обработки, хранения и уничтожения Персональных данных.</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">ООО «ГК «Иннотех» будет осуществлять хранение и обработку Персональных данных в течение действия всех лицензий (сублицензий) Лицензиата на Программу. Если ООО «ГК «Иннотех» сопровождает работу по добавлению/удалению учетных записей Конечных пользователей, то ООО «ГК «Иннотех» произведет удаление Персональных данных и/или блокирование их данных (при отсутствии возможности удаления Персональных данных будет произведено блокирование данных в соответствии с ч. 6 ст. 21 Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных»). Если Лицензиат сопровождает работу по добавлению/удалению учетных записей Пользователей, то он обязан самостоятельно удалить Персональные данные не позднее 30 дней со дня истечения срока действия лицензии. Лицензиат самостоятельно оформляет документацию, подтверждающую удаление Персональных данных. </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">14. Совместная обработка Персональных данных.</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">Если пользовательским соглашением между Конечным Пользователем Программы и ООО «ГК «Иннотех» предусмотрено, что ООО «ГК «Иннотех» является оператором персональных данных, то: - ООО «ГК «Иннотех» как оператор персональных данных обрабатывает только те персональные данные Конечных пользователей, которые Конечные пользователи самостоятельно ввели при регистрации в Программе, не воспользовавшись механизмом SSO; - Лицензиат является оператором персональных данных в случаях, когда ООО «ГК «Иннотех» получает персональные данные Конечных пользователей от Лицензиата (включая случаи когда Конечные пользователи регистрируются по SSO механизму); вся обработка персональных данных Конечных пользователей в этих случаях осуществляется ООО «ГК «Иннотех» по поручению Лицензиата. </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">15. Ответственность Сторон.</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">ООО «ГК «Иннотех» обязуется возместить Лицензиату убытки в размере причиненного и документально подтвержденного реального ущерба, причиненного вследствие несоблюдения ООО «ГК «Иннотех» цели и состава действий по обработке персональных данных, указанных в данном поручении, или нарушения конфиденциальности и (или) безопасности персональных данных, обрабатываемых в рамках данного соглашения. </span><br /><br /><span style="color: rgb(0, 0, 0);">15.1. Ответственность за действия Конечных пользователей. Лицензиат как оператор персональных данных несет полную ответственность за действия Конечных пользователей при использовании Программы, в том числе за возможность раскрытия ими персональных данных и иной конфиденциальной информации при использовании Программы. </span><br /><br /><span style="color: rgb(0, 0, 0);">15.2. Ответственность за оборудование, сервера и устройства Конечных пользователей. Лицензиат, как оператор персональных данных также несет полную ответственность за нарушения обработки персональных данных и иной конфиденциальной информации, которые произошли на устройствах Конечных пользователей, а также на оборудовании и серверах Лицензиата/иных третьих лиц (включая нарушения, которые произошли в результате того, что персональные данные Конечных пользователей и иная конфиденциальная информация находятся в открытом виде и/или незащищенном виде при использовании Программы). </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">15.3. Пределы ответственности ООО «ГК «Иннотех».</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">ООО «ГК «Иннотех» не несет ответственность за нарушения правил обработки и конфиденциальности персональных данных и иной информации. Ответственность за указанные нарушения полностью возлагается на Лицензиата. Если в результате таких нарушений на стороне ООО «ГК «Иннотех» возникнут убытки, то Лицензиат их полностью возместит. </span><br /><br /><span style="color: rgb(0, 0, 0);">15.4. Возмещение убытков ООО «ГК «Иннотех». Лицензиат обязуется возместить ООО «ГК «Иннотех» убытки в размере причиненного и документально подтвержденного реального ущерба, в том числе в размере наложенного на ООО «ГК «Иннотех» административного и/или иного штрафа по факту неисполнения или ненадлежащего исполнения Лицензиатом обязанностей по Соглашению. В случае нарушения правил обработки и конфиденциальности Персональных данных Конечных пользователей, которые возникли в связи с нарушениями Лицензиата, он обязуется возместить ООО «ГК «Иннотех» убытки, причиненные по его вине, в том числе: </span><br /><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">штрафы государственных органов, </span></li></ul><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">претензии/издержки/выплаты Конечным пользователям в результате инцидентов с персональными данными Пользователей), которые были допущены Лицензиатом в случае, когда ООО «ГК «Иннотех» и Лицензиат являлись совместными операторами персональных данных. </span></li></ul><br /><br /><strong style="color: rgb(0, 0, 0);">16. Заключительные положения.</strong><span style="color: rgb(0, 0, 0);"> </span><br /><br /><span style="color: rgb(0, 0, 0);">16.1. Порядок заключения. Настоящее соглашение является договором присоединения по смыслу ст. 428 ГК РФ. Лицензиат присоединяется к нему в момент приобретения лицензии путем подписания согласия на присоединение к Соглашению. </span><br /><br /><span style="color: rgb(0, 0, 0);">16.2. Вступление в силу. Соглашение вступает в силу с момента его подписания обеими Сторонами и действует до момента исполнения всех обязательств по лицензионному договору и Соглашению. </span><br /><br /><span style="color: rgb(0, 0, 0);">16.3. Претензионный порядок. При возникновении споров по настоящему Договору обязательным является предъявление претензии, срок рассмотрения которой устанавливается в 14 календарных дней с даты ее получения стороной. Претензия и ответ на нее направляются по почте ценным письмом с описью вложения. </span><br /><br /><span style="color: rgb(0, 0, 0);">16.4. Подсудность. Споры и разногласия, вытекающие из Договора, подлежат рассмотрению в соответствии с законодательством Российской Федерации в Арбитражном суде г. Москвы. </span><br /><br /><span style="color: rgb(0, 0, 0);">16.5. Во всем остальном, не урегулированном положениями настоящего Соглашения, Стороны руководствуются положениями действующего законодательства РФ.</span><br /><br /><br /></div></div></div></div></div></div><div id="rec570372501" class="r t-rec t-rec_pt_60 t-rec_pb_60" style="padding-top:60px;padding-bottom:60px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="line-height: 16px;" data-customstyle="yes"><span style="font-size: 14px; color: rgb(0, 0, 0);"><sup>1</sup><sub> Под категорию «иные лица» могут попадать (1) физические лица, выполняющие для Лицензиата работы/оказывающие Лицензиату услуги на основании договоров; (2) работники аффилированных с Лицензиатом лиц, (3) представители контрагентов Лицензиата; (4) любые физические лица, чьи данные ООО «ГК «Иннотех» получает от Субицензиата и/или от Пользователей, которые используют Программу в связи с наличием лицензии </sub></span><br /><br /><span style="font-size: 14px; color: rgb(0, 0, 0);"><sup>2</sup><sub> В случае если фактические действия по удалению и уничтожению фактически осуществляются ООО «ГК «Иннотех» в процессе техни</sub></span></div></div></div></div></div></div></div><!--/allrecords-->

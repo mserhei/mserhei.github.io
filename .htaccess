@@ -1,0 +1,11 @@
+DirectoryIndex index.html
+
+# Редирект с www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.diongo.ru$ [NC]
+RewriteRule ^(.*)$ http://diongo.ru/$1 [R=301,L]
+
+# Редирект на главную только с несуществующих страниц
+RewriteEngine On
+ErrorDocument 404 /index.html
+

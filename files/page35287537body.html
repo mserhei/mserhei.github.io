@@ -1,0 +1,439 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6849292" data-tilda-page-id="35287537" data-tilda-page-alias="sla" data-tilda-formskey="3befead0255596de5e1bac0fb6849292" data-tilda-lazy="yes"><div id="rec570144197" class="r t-rec" style=" " data-animationappear="off" data-record-type="257" ><!-- T228 --><div id="nav570144197marker"></div><div class="tmenu-mobile tmenu-mobile_positionfixed" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__burgerlogo"><a href="" style="color:#ffffff;"><img src="images/tild6262-3562-4139-b130-373465323434__vector_41_1.svg" class="tmenu-mobile__imglogo" imgfield="img" style="max-width: 80px; width: 80px;" alt=""></a></div><div class="t-menuburger t-menuburger_second t-menuburger__small"><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span></div><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('570144197');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec570144197 .tmenu-mobile {
+background-color: #ffffff;
+}
+#rec570144197 .tmenu-mobile__menucontent_fixed {
+position: fixed;
+top: 64px;
+}
+#rec570144197 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><div id="nav570144197" class="t228 t228__positionfixed tmenu-mobile__menucontent_hidden tmenu-mobile__menucontent_fixed" style="background-color: rgba(255,255,255,0.60); " data-bgcolor-hex="#ffffff" data-bgcolor-rgba="rgba(255,255,255,0.60)" data-navmarker="nav570144197marker" data-appearoffset="" data-bgopacity-two="80" data-menushadow="" data-bgopacity="0.60" data-bgcolor-rgba-afterscroll="rgba(255,255,255,0.80)" data-menu-items-align="center" data-menu="yes"><div class="t228__maincontainer " style=""><div class="t228__padding40px"></div><div class="t228__leftside"><div class="t228__leftcontainer"><a href="" class="t228__imgwrapper" style="color:#ffffff;"><img class="t228__imglogo t228__imglogomobile" 
+src="images/tild6262-3562-4139-b130-373465323434__vector_41_1.svg" 
+imgfield="img"
+style="max-width: 80px; width: 80px; min-width: 80px; height: auto; display: block;"
+alt=""></a></div></div><div class="t228__centerside "></div><div class="t228__rightside"><div class="t228__rightcontainer"><div class="t228__right_buttons"><div class="t228__right_buttons_wrap"><div class="t228__right_buttons_but"><a href="" target="" class="t-btn t-btn_md " style="color:#000000;border:1px solid #e3e3e3;border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;font-family:VTBGroupUI;font-weight:500;"><table role="presentation" style="width:100%; height:100%;"><tr><td>Вернуться на главную</td></tr></table></a></div></div></div></div></div><div class="t228__padding40px"></div></div></div><style>@media screen and (max-width: 980px) {
+#rec570144197 .t228__leftcontainer{
+display: none;
+}
+}</style><style>@media screen and (max-width: 980px) {
+#rec570144197 .t228__leftcontainer {
+padding: 20px;
+}
+#rec570144197 .t228__imglogo {
+padding: 20px 0;
+}
+#rec570144197 .t228 {
+}
+}</style><script>window.addEventListener('load', function () {
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('570144197');
+});
+});
+window.addEventListener('resize', t_throttle(function () {
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('570144197');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('570144197', '.t228');
+});
+}));
+t_onReady(function () {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t228__list_item a');
+});
+t_onFuncLoad('t_menu__findAnchorLinks', function () {
+t_menu__findAnchorLinks('570144197', '.t228__list_item a');
+});
+t_onFuncLoad('t228__init', function () {
+t228__init('570144197');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('570144197', '.t228');
+});
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('570144197');
+});
+t_onFuncLoad('t_menu__changeBgOpacity', function () {
+t_menu__changeBgOpacity('570144197', '.t228');
+window.addEventListener('scroll', t_throttle(function () {
+t_menu__changeBgOpacity('570144197', '.t228');
+}));
+});
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('570144197', '.t228');
+});
+});</script><!--[if IE 8]><style>#rec570144197 .t228 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9ffffff', endColorstr='#D9ffffff');
+}</style><![endif]--><style>@media (hover), (min-width:0\0) {
+#rec570144197 .t-btn:not(.t-animate_no-hover):hover{
+background-color: #0062ff !important; color: #ffffff !important; border-color: #0062ff !important; }
+#rec570144197 .t-btn:not(.t-animate_no-hover){
+-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#rec570144197 .t-btntext:not(.t-animate_no-hover):hover{
+color: #ffffff !important; }
+}</style><style>#rec570144197 .t-menu__link-item{
+outline: none;
+}
+#rec570144197 .t-menu__link-item:focus-visible{
+outline: 5px auto rgba(0, 150, 255, 1);
+-webkit-outline: 5px auto rgba(0, 150, 255, 1);
+-moz-outline: 5px auto rgba(0, 150, 255, 1);
+-ms-outline: 5px auto rgba(0, 150, 255, 1);
+-o-outline: 5px auto rgba(0, 150, 255, 1);
+}
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec570144197 .t-menu__link-item,
+#rec570144197 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style></div><div id="rec570144388" class="r t-rec t-rec_pt_165 t-rec_pb_0" style="padding-top:165px;padding-bottom:0px; " data-record-type="255" ><!-- T225 --><div class="t225"><div class="t-container t-align_left"><div class="t-col t-col_8 t-prefix_2"><div class="t225__title t-title t-title_md" field="title" style=""><div style="font-size: 30px;" data-customstyle="yes"><p style="text-align: left;"><strong style="color: rgb(102, 102, 102);">ОПИСАНИЕ УСЛУГ ТЕХНИЧЕСКОЙ ПОДДЕРЖКИ И ОБСЛУЖИВАНИЯ И ТРЕБОВАНИЯ К НИМ (SLA)</strong></p></div></div> </div></div></div></div><div id="rec570145137" class="r t-rec t-rec_pt_45 t-rec_pb_60" style="padding-top:45px;padding-bottom:60px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong style="color: rgb(0, 0, 0);">1. Термины и определения </strong><br /><br /><em style="color: rgb(0, 0, 0);">Служба поддержки</em><br /><span style="color: rgb(0, 0, 0);">Подразделение Исполнителя, которое занимается устранением инцидентов с программным обеспечением.</span><br /><span style="color: rgb(0, 0, 0);">Время работы:</span><br /><span style="color: rgb(0, 0, 0);">По будням с 09.00 до 18.00 (московское время).</span><br /><span style="color: rgb(0, 0, 0);">Контакты службы поддержки:</span><br /><a href="mailto:support@dion.vc" style="color: rgb(0, 0, 0);">support@dion.vc</a><br /><br /><em style="color: rgb(0, 0, 0);">Заказчик</em><br /><span style="color: rgb(0, 0, 0);">лицо, получающее Услуги от Исполнителя. </span><br /><span style="color: rgb(0, 0, 0);">Заказчиком в рамках SLA могут быть:</span><br /><span style="color: rgb(0, 0, 0);">a) Партнер – в рамках получения субуслуг от Вендора для Конечного пользователя;</span><br /><span style="color: rgb(0, 0, 0);">b) Конечный пользователь – в рамках получения услуг от Партнера.</span><br /><br /><em style="color: rgb(0, 0, 0);">Исполнитель</em><br /><span style="color: rgb(0, 0, 0);">лицо, оказывающее гарантийную или техническую поддержку Заказчику. </span><br /><span style="color: rgb(0, 0, 0);">Исполнителем в рамках SLA может быть Вендор или Партнер.</span><br /><br /><em style="color: rgb(0, 0, 0);">Гарантийная поддержка</em><br /><span style="color: rgb(0, 0, 0);">действия Исполнителя по обеспечению работоспособности программного обеспечения в течение срока действия договора.</span><br /><br /><em style="color: rgb(0, 0, 0);">Техническая поддержка</em><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);">услуги по интеграции Программного обеспечения в инфраструктуру Заказчика.</span><br /><br /><em style="color: rgb(0, 0, 0);">Доработка</em><br /><span style="color: rgb(0, 0, 0);">изменение функционала Программного обеспечения под требования Заказчика.</span><br /><br /><em style="color: rgb(0, 0, 0);">Программное обеспечение (ПО)</em><br /><span style="color: rgb(0, 0, 0);">программа для ЭВМ «Дион» (Dion) исключительное право на которую принадлежит Вендору.</span><br /><br /><em style="color: rgb(0, 0, 0);">Заказ</em><br /><span style="color: rgb(0, 0, 0);">документ, с помощью которого Заказчик и Исполнитель оформляют оказание конкретных Услуг в рамках SLA.</span><br /><br /><em style="color: rgb(0, 0, 0);">Инцидент</em><br /><span style="color: rgb(0, 0, 0);">событие или их совокупность, приведшие к недоступности основного функционала ПО.</span><br /><br /><em style="color: rgb(0, 0, 0);">Период технического обслуживания</em><br /><span style="color: rgb(0, 0, 0);">периоды недоступности ПО, связанные с обслуживанием или обновлением сети, оборудования или Программного обеспечения. </span><br /><span style="color: rgb(0, 0, 0);">По умолчанию ПО может быть не доступно в течение 5 минут с 22:00 до 01:00 (московское время) не более 2-х дней в месяц.</span><br /><span style="color: rgb(0, 0, 0);">В иных случаях Исполнитель будет заблаговременно предупреждать о Периоде технического обслуживания.</span><br /><br /><span style="color: rgb(0, 0, 0);"> </span><br /><em style="color: rgb(0, 0, 0);">Применимый ежемесячный период</em><br /><span style="color: rgb(0, 0, 0);">количество дней, в течение которых Заказчик имеет право использовать Программное обеспечение в календарном месяце, за который необходимо выплатить Компенсацию за обслуживание.</span><br /><br /><em style="color: rgb(0, 0, 0);">Компенсация</em><br /><span style="color: rgb(0, 0, 0);">предоставление Заказчику скидки на ПО в связи с нарушением SLA. </span><br /><span style="color: rgb(0, 0, 0);">Коэффициент доступности ПО</span><br /><span style="color: rgb(0, 0, 0);">Показатель доступности ПО, исчисляемый по следующей формуле:</span><br /><span style="color: rgb(0, 0, 0);">[(человеко-минуты – X*Y)/человеко-минуты]*100%</span><br /><span style="color: rgb(0, 0, 0);">где </span><br /><em style="color: rgb(0, 0, 0);">Человеко-минуты</em><span style="color: rgb(0, 0, 0);"> — количество минут в месяц, за вычетом Периода технического обслуживания, помноженное на общее число пользователей;</span><br /><em style="color: rgb(0, 0, 0);">X</em><span style="color: rgb(0, 0, 0);"> — это сумма продолжительности всех в этом месяце Инцидентов (в минутах);</span><br /><em style="color: rgb(0, 0, 0);">Y</em><span style="color: rgb(0, 0, 0);"> – это количество пользователей, на которых повлиял этот Инцидент.</span><br /><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);"> </span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">2. Предмет</strong><br /><br /><strong style="color: rgb(0, 0, 0);"> </strong><br /><span style="color: rgb(0, 0, 0);">2.1. По SLA Исполнитель оказывает Заказчику Гарантийную поддержку по обеспечению работы Программного обеспечения, а также за дополнительную плату предоставляет услуги Технической поддержки и осуществляет Доработку ПО.</span><br /><br /><span style="color: rgb(0, 0, 0);">2.2. Для пользования ПО на условиях его размещения на инфраструктуре Заказчика, он должен иметь оборудование со следующими характеристиками:</span><br /><br /><span style="color: rgb(0, 0, 0);">2.2.1. </span><em style="color: rgb(0, 0, 0);">Компонент</em><br /><span style="color: rgb(0, 0, 0);">MEDIA</span><br /><br /><em style="color: rgb(0, 0, 0);">CPU (шт.)</em><br /><span style="color: rgb(0, 0, 0);">16</span><br /><br /><em style="color: rgb(0, 0, 0);">ОЗУ (ГБ)</em><br /><span style="color: rgb(0, 0, 0);">32</span><br /><br /><em style="color: rgb(0, 0, 0);">HDD</em><br /><span style="color: rgb(0, 0, 0);">60 Гб</span><br /><br /><em style="color: rgb(0, 0, 0);">ОС</em><br /><span style="color: rgb(0, 0, 0);">UBUNTU 20.04</span><br /><br /><em style="color: rgb(0, 0, 0);">Примечание</em><br /><span style="color: rgb(0, 0, 0);">500 видео участников</span><br /><br /><span style="color: rgb(0, 0, 0);">2.2.2. </span><em style="color: rgb(0, 0, 0);">Компонент</em><br /><span style="color: rgb(0, 0, 0);">TURN</span><br /><br /><em style="color: rgb(0, 0, 0);">CPU (шт.)</em><br /><span style="color: rgb(0, 0, 0);">8</span><br /><br /><em style="color: rgb(0, 0, 0);">ОЗУ (ГБ)</em><br /><span style="color: rgb(0, 0, 0);">32</span><br /><br /><em style="color: rgb(0, 0, 0);">HDD</em><br /><span style="color: rgb(0, 0, 0);">60 Гб</span><br /><br /><em style="color: rgb(0, 0, 0);">ОС</em><br /><span style="color: rgb(0, 0, 0);">UBUNTU 20.04</span><br /><br /><em style="color: rgb(0, 0, 0);">Примечание</em><br /><span style="color: rgb(0, 0, 0);">1000 видео участников</span><br /><br /><span style="color: rgb(0, 0, 0);">2.2.3. </span><em style="color: rgb(0, 0, 0);">Компонент</em><br /><span style="color: rgb(0, 0, 0);">ШЛЮЗ</span><br /><br /><em style="color: rgb(0, 0, 0);">CPU (шт.)</em><br /><span style="color: rgb(0, 0, 0);">8</span><br /><br /><em style="color: rgb(0, 0, 0);">ОЗУ (ГБ)</em><br /><span style="color: rgb(0, 0, 0);">32</span><br /><br /><em style="color: rgb(0, 0, 0);">HDD</em><br /><span style="color: rgb(0, 0, 0);">60 Гб</span><br /><br /><em style="color: rgb(0, 0, 0);">ОС</em><br /><span style="color: rgb(0, 0, 0);">UBUNTU 20.04</span><br /><br /><em style="color: rgb(0, 0, 0);">Примечание</em><br /><span style="color: rgb(0, 0, 0);">Не участвует в передаче медиа. Необходим для регистрации media-серверов в облаке.</span><br /><br /><br /><span style="color: rgb(0, 0, 0);">2.3. Системные требования для использования ПО на условиях удаленного доступа:</span><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">для использования веб-версии необходим браузер Google Chrome версии 90 и выше, либо Яндекс.Браузер версии 21 и выше;</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">для мобильного устройства на базе Android ОС версия 8 или выше;</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">для мобильного устройства на базе iOS версия 13 или выше;</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">для подключения к конференции необходим микрофон.</span></li></ul><br /><br /><strong style="color: rgb(0, 0, 0);">3. Гарантийная поддержка</strong><br /><br /><span style="color: rgb(0, 0, 0);">3.1. В рамках гарантийной поддержки Исполнитель без дополнительной платы оказывает помощь Заказчику и пользователям с его стороны по обеспечению стабильной работы ПО в рамках стандартного функционала. </span><br /><span style="color: rgb(0, 0, 0);">3.2. Гарантийная поддержка предоставляется в течение срока действия договора, которым предусмотрено использование ПО.</span><br /><span style="color: rgb(0, 0, 0);">3.3. Заказчик обязан незамедлительно уведомить Исполнителя об Инциденте по электронной почте.</span><br /><span style="color: rgb(0, 0, 0);">3.4. В отношении доступности ПО установлен процент времени работоспособности за месяц в размере 99,9% без учета Периода технического обслуживания.</span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">4. Компенсация за обслуживание</strong><br /><br /><span style="color: rgb(0, 0, 0);">4.1. В случае, если время недоступности основного функционала ПО превышает 0,1% в месяц Исполнитель гарантирует предоставление компенсации за обслуживание в следующих размерах:</span><br /><br /><span style="color: rgb(0, 0, 0);">4.1.1. </span><em style="color: rgb(0, 0, 0);">Процент времени работоспособности за месяц</em><br /><span style="color: rgb(0, 0, 0);">&lt; 99,9 %</span><br /><br /><em style="color: rgb(0, 0, 0);">Компенсация за обслуживание</em><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);">15% от стоимости месяца пользования ПО</span><br /><br /><br /><span style="color: rgb(0, 0, 0);">4.1.2. </span><em style="color: rgb(0, 0, 0);">Процент времени работоспособности за месяц</em><br /><span style="color: rgb(0, 0, 0);">&lt; 99 %</span><br /><br /><em style="color: rgb(0, 0, 0);">Компенсация за обслуживание</em><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);">30% от стоимости месяца пользования ПО</span><br /><br /><br /><span style="color: rgb(0, 0, 0);">4.1.2. </span><em style="color: rgb(0, 0, 0);">Процент времени работоспособности за месяц</em><br /><span style="color: rgb(0, 0, 0);">&lt; 95 %</span><br /><br /><em style="color: rgb(0, 0, 0);">Компенсация за обслуживание</em><span style="color: rgb(0, 0, 0);"> </span><br /><span style="color: rgb(0, 0, 0);">50% от стоимости месяца пользования ПО</span><br /><br /><span style="color: rgb(0, 0, 0);">4.2. Компенсация за обслуживание предоставляется в виде скидки. Скидка рассчитывается в процентах от стоимости пользования ПО за месяц, в котором его доступность была нарушена.</span><br /><span style="color: rgb(0, 0, 0);">4.3. Компенсация имеет фиксированный характер и суммарно в течение года не может превышать месячную стоимость пользования ПО.</span><br /><span style="color: rgb(0, 0, 0);">4.4. Для получения компенсации за обслуживание Заказчик должен направить требование в Службу поддержки в котором должно быть указано следующее:</span><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">подробное описание Инцидента;</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">сведения о дате и продолжительности Инцидента;</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">перечень аккаунтов и местоположение затронутых пользователей (если применимо);</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">описание того, как Заказчик пытался разрешить Инцидент, когда он произошел.</span></li></ul><span style="color: rgb(0, 0, 0);">Исполнитель рассмотрит требование в течение 30 календарных дней с даты получения и уведомит Заказчика о принятом решении.</span><br /><br /><br /><strong style="color: rgb(0, 0, 0);">5. Техническая поддержка и Доработка</strong><br /><br /><span style="color: rgb(0, 0, 0);">5.1. Исполнитель может оказывать услуги технической поддержки и осуществлять доработку ПО за дополнительную плату на основании Заказа.</span><br /><span style="color: rgb(0, 0, 0);">5.2. Техническая поддержка и Доработка осуществляются в следующем порядке:</span><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Заказчиком формирует Заказ и направляет его на электронную почту службы поддержки. В Заказе излагается подробное техническое задание.</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Исполнитель в течение 14 дней с даты получения Заказа информирует о возможности технической поддержки или доработки, а также об их содержании, сроках выполнения и стоимости.</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">При достижении Сторонами согласия по всем условиям они заключают дополнительное соглашение или отдельный договор.</span></li></ul><br /><br /><strong style="color: rgb(0, 0, 0);">6. Ограничения</strong><br /><br /><span style="color: rgb(0, 0, 0);">6.1. Ответственность Исполнителя за нарушение SLA ограничена суммой компенсации.</span><br /><span style="color: rgb(0, 0, 0);">6.2. SLA не распространяется Инциденты, возникшие в следующих случаях:</span><br /><ul><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Если проблема возникла в связи с факторами, которые находятся вне пределов контроля Исполнителя (например, в случае стихийного бедствия, войны, террористических актов, мятежей, социальных протестов, действий органов государственной власти);</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Если проблема обусловлена использованием служб, оборудования или программного обеспечения, которое не было предоставлено Исполнителем;</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Если Исполнитель рекомендовал изменить способ использования или установки Программного обеспечения, но Заказчик этого не сделал, и продолжил пользоваться ПО, как прежде;</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Если проблема возникла при использовании предварительных версий, предварительных выпусков, бета-версий или пробных версий функции или программного обеспечения;</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Если Инцидент возник в результате того, что Заказчик:</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Не соблюдал требуемые конфигурации;</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Не использовал поддерживаемые платформы; </span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Не следовал политике допустимого использования;</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Использовал ПО таким образом, который не соответствует его функциям или возможностям (например, осуществлялись попытки выполнить неподдерживаемые операции);</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Неправильно вводил данные или использовал неверные инструкции (например, в результате запросов на доступ к файлам, которых не существует);</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Не оплатил вознаграждение за лицензию / услуги Исполнителя;</span></li><li style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Использовал функции ПО за рамками наличия у него права на гарантийную поддержку.</span></li></ul><br /><br /></div></div></div></div></div></div><!--/allrecords-->
